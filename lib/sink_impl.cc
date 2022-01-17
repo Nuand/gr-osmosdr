@@ -30,6 +30,8 @@
 #include <gnuradio/io_signature.h>
 #include <gnuradio/constants.h>
 
+#include <boost/foreach.hpp>
+
 #ifdef ENABLE_UHD
 #include "uhd_sink_c.h"
 #endif
