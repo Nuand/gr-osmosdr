@@ -31,6 +31,7 @@
 #include <gnuradio/blocks/null_source.h>
 #include <gnuradio/blocks/throttle.h>
 #include <gnuradio/constants.h>
+#include <boost/foreach.hpp>
 
 #ifdef ENABLE_FCD
 #include <fcd_source_c.h>
