@@ -327,7 +327,7 @@ void bladerf_common::init(dict_t const &dict, bladerf_direction direction)
     BLADERF_DEBUG( "Feature not provided. Feature left on DEFAULT");
   }
 
-  status = bladerf_set_feature(_dev.get(), _feature);
+  status = bladerf_enable_feature(_dev.get(), _feature, true);
   if (status != 0) {
     BLADERF_THROW_STATUS(status, "Unabled to set feature");
   } else {
